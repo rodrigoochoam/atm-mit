@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ATM Machine</title>
+  <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- ----------------- Bootstrap header START ----------------- -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+    #bienvenida {
+      font-family: 'Source Code Pro', monospace;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgb(43, 43, 43);
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    body{
+      background-color: antiquewhite;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #button-deposit {
+      background-color: #00a01d;
+      border-radius: 10px;
+      width: 150px;
+    }
+    #button-withdraw {
+      background-color: #e61300;
+      border-radius: 10px;
+      width: 150px;
+    }
+    h5{
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<section id="bienvenida">
+  <h1>ATM Machine</h1>
+</section>
+<body>
+  <!-- We will put our React component inside this div. -->
+  <div id="root"></div>
+  <!-- Load React. -->
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  <!-- Load our React component. -->
+
+  <script src="starterCode.jsx" defer type="text/babel"></script>
+</body>
+
+</html>
